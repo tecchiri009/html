@@ -4,6 +4,35 @@ body{
     'Hiragino Kaku Gothic Pro', sans-serif;
 }
 
+
+/* ############### 768px以上 ############### */
+@media (min-width: 768px){
+    /* box3とbox4を横に並べる設定 */
+    .boxA:after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    .box3{
+        float: left;
+        width: 70%;
+    }
+
+    .box4{
+        float: left;
+        width: 30%;
+    }
+
+    /* box3とbox4の左右の間隔 */
+    .box3{
+        padding-right: 50px;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+}
+
 /* サイト名 */
 .site h1 a{
     color: #000000;
@@ -15,10 +44,10 @@ body{
     font-size: 30px;
 }
 
-.site p{
+/* .site p{
     margin: 0;
     font-size: 12px;
-}
+} */
 
 /* メニュー(横並び) */
 /* 縦並びのみの場合　ここから */
@@ -30,14 +59,14 @@ body{
 
 .menu li a {
     display: block;
-    padding: 5px;
+    padding: 15px;
     color: #000000;
     font-size: 14px;
     text-decoration: none;
 }
 
 .menu li a:hover{
-    background-color: #eeeeee;
+    background-color: #75dbe7;
 }
 /* 縦並びのみの場合　ここまで */
 
@@ -64,9 +93,134 @@ body{
     margin-bottom: 20px;
 }
 
+.kiji img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* サイドメニュー */
+.sidemenu{
+    margin-bottom: 30px;
+}
+
+.sidemenu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidemenu li a{
+    display: block;
+    padding: 5px;
+    color: #000000;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.sidemenu li a:hover{
+    background-color: #eeeeee;
+}
+
+.sidemenu h1{
+    margin-top: 0;
+    margin-bottom: 10px;
+    border-bottom: dotted 2px #dddddd;
+    color: #666666;
+    font-size: 18px;
+}
+
+/* おすすめ記事メニュー */
+.osusume{
+    margin-bottom: 30px;
+}
+
+.osusume ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.osusume li a{
+    display: block;
+    padding: 5px;
+    color: #000000;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.osusume li a:hover{
+    background-color: #eeeeee;
+}
+
+.osusume h1{
+    margin-top: 0;
+    margin-bottom: 10px;
+    border-bottom: dotted 2px #dddddd;
+    color: #666;
+    font-size: 18px;
+}
+
+/* 人気の記事メニュー */
+.ninki ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.ninki li a{
+    display: block;
+    padding: 5px;
+    color: #000000;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.ninki li a:hover{
+    background-color: #eeeeee;
+}
+
+.ninki h1{
+    margin-top: 0;
+    margin-bottom: 10px;
+    border-bottom: dotted 2px #dddddd;
+    color: #666;
+    font-size: 18px;
+}
+
 /* コピーライト */
 .copyright p{
     margin: 0;
     color: #666666;
     font-size: 14px;
+}
+
+/* box2をバーの形にする */
+.box2{
+    background-color: #7cbac1;
+}
+
+/* box5の上に区切り線を入れる */
+.box5{
+    border-top: solid 1px #dddddd;
+}
+
+/* ボックスの上下の間隔 */
+.box1{
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.box3{
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.box4{
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.box5{
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
